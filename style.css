@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Montserrat:wght@300&family=Playfair+Display:wght@500&display=swap');
+
+body {
+  line-height: 1.5;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 3em;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+  font-size: 1.5em;
+  color: #464F51;
+  display: block;
+  margin-block: 1em;
+}
+
+h2.sub-title {
+  font-family: 'Playfair Display', serif;
+  color: white;
+}
+
+p {
+  font-family: 'Lora', serif;
+  font-weight: lighter;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  color: #464F51;
+  font-weight: lighter;
+  size: 35px;
+}
+
+a:hover {
+  color: white;
+  background-color: #0FF4C6;
+  font-weight: bold;
+}
+
+.banner {
+    background-image: url(https://source.unsplash.com/random/1000x600);
+    background-size: cover;
+    color: white;
+    height: 200px;
+    padding: 50px 150px;
+    line-height: 2;
+  }
+  
+.container {
+  margin: 50px 150px;
+  text-align: justify;
+  line-height: 1.5;
+}
+
+/* Media queries */
+@media(max-width: 900px) {
+  .container {
+    width: 700px;
+  }
+}
+@media(max-width: 750px) {
+  .container {
+    width: 450px;
+  }
+}
+@media(max-width: 500px) {
+  .container {
+    width: 350px;
+  }
+  .banner {
+    padding: 50px 0;
+  }
+  .banner h1 {
+    font-size: 30px;
+  }
+  .banner p {
+    font-size: 20px;
+  }
+}
